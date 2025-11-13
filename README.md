@@ -48,3 +48,4 @@ Inspo
 https://github.com/sb2nov/resume
 https://github.com/Erik-Cupsa/ResumeTemplate
 https://github.com/jitinnair1/autoCV
+https://github.com/jakegut/resume
