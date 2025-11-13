@@ -1,0 +1,223 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+\usepackage[margin=1.4cm]{geometry}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.15in}
+ \addtolength{\textwidth}{0.3in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{0pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}\vspace{0pt}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Large \scshape Edrian Miguel E. Capistrano} \\[2mm]
+    \footnotesize \raisebox{-0.1\height}
+    \faPhone\ \underline{0976-490-7611} ~ 
+    {\faEnvelope\  \underline{edrian.miguel.capistrano@student.ateneo.edu}} ~ 
+    {\faLinkedin\ \underline{\href{https://www.linkedin.com/}{linkedin.com/}}}  ~
+    {\faGithub\ \underline{\href{https://github.com/yanicells}{github.com/yanicells}}} ~
+    {\faBriefcase\ \underline{\href{https://yanicells.dev/}{yanicells.dev}}}
+    \vspace{-8pt}
+\end{center}
+
+ %-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Ateneo de Manila University}{Expected Graduation: 2028}
+      {Bachelor of Science in Computer Science, 2nd Year
+      }{Quezon City}
+  \resumeSubHeadingListEnd
+    \resumeItemListStart
+        \resumeItem {First Honor, 1st Year (1st \& 2nd Semesters) | \textbf{Cumulative QPI: 3.91}}
+        \vspace{-7pt}
+        \resumeItem {Previous Education: La Salle Academy, Iligan City -- Junior High School Valedictorian, Senior High School Valedictorian with Highest Honor (2018-2024)}
+    \resumeItemListEnd
+    \vspace{-12pt}
+%-----------Experience---------------
+\section{Work Experience}
+    \resumeSubHeadingListStart
+                \resumeSubheading{MISA (Management Information Systems Association)}{August 2025 -- Present}{IT Skills \& Development Officer}{Ateneo de Manila University} 
+                \resumeItemListStart
+                    \resumeItem{Organize technical skill trainings and workshops for students interested in information systems and technology}
+                    \resumeItem{Assist in developing and maintaining organizational websites and systems to support association activities}
+                    \resumeItemListEnd
+            \resumeSubheading{CompSAt (Computer Science Association)}{July 2025 -- Present}{Geekshop Documentation Core Team}{Ateneo de Manila University} 
+                \resumeItemListStart
+                    \resumeItem{Managed photo and video documentation for events and tracked organizational records}
+                    \resumeItem{Contributed to event coverage and visual storytelling for the computer science community}
+                    \resumeItemListEnd
+            \resumeSubheading{SOSE Newsletter}{2025 -- Present}{Writing Assistant (ARISE)}{Ateneo de Manila University}
+                \resumeItemListStart
+                    \resumeItem{Contributed to interviewing, article writing, and editing for the School of Science and Engineering newsletter}
+                    \resumeItem{Collaborated with editorial team to produce engaging content for the college community}
+                    \resumeItemListEnd
+    \resumeSubHeadingListEnd
+    \vspace{-12pt}
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+    \resumeProjectHeading
+            {\textbf{{Java 2D Multiplayer Game}} $|$ \emph{Source Code Available}}{Java $|$ Swing $|$ Networking $|$ Multithreading}
+            \\[5mm]
+          \resumeItemListStart
+            \resumeItem{Developed a Left 4 Dead 2 inspired networked multiplayer game with \textbf{A* pathfinding} and \textbf{multithreading}}
+            \resumeItem{Implemented version control and project management practices throughout development}
+          \resumeItemListEnd
+ \vspace{-20pt}
+ \resumeProjectHeading
+            {\textbf{{Photo and Music Album Web App}}}{HTML $|$ CSS $|$ JavaScript $|$ Tailwind}
+            \\[5mm]
+          \resumeItemListStart
+            \resumeItem{Built a responsive media-handling web application using \textbf{HTML}, \textbf{CSS}, \textbf{JavaScript}, and \textbf{Tailwind CSS}}
+            \resumeItem{Designed intuitive user interface for managing and displaying photo and music collections}
+          \resumeItemListEnd
+ \vspace{-17pt}
+ \resumeProjectHeading
+{\textbf{{Portfolio Website}} $|$ \emph{\href{https://portfolio.vercel.app/}{Website}}}{HTML $|$ CSS $|$ JavaScript $|$ Tailwind}
+\\[5mm]
+\resumeItemListStart
+\resumeItem{Created a personal showcase site with \textbf{HTML}, \textbf{CSS}, \textbf{JavaScript}, and \textbf{Tailwind} to highlight projects and skills}
+\resumeItemListEnd
+ \vspace{-17pt}
+ \resumeProjectHeading
+{\textbf{{GUI Card Game}}}{Java $|$ Swing $|$ AWT}
+\\[5mm]
+\resumeItemListStart
+\resumeItem{Designed a card game with attack, defense, and ability mechanics showcasing \textbf{OOP principles} and event-driven programming}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{-28pt}
+%-----------LEADERSHIP-----------
+\section{Leadership \& Community Service}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+                   \resumeProjectHeading
+            {\textbf{{Supreme Student Government, STEM Strand Vice Governor}}}{2023 -- 2024}
+            \\[5mm]
+          \resumeItemListStart
+            \resumeItem{Oversaw events such as Sportsfest, La Salle Fair, Jumpstart, and House Cup at La Salle Academy}
+            \resumeItem{Developed leadership, logistics, time management, and project coordination skills through event management}
+          \resumeItemListEnd
+ \vspace{-17pt}
+                   \resumeProjectHeading
+            {\textbf{{Study Buddy Advocacy, Tutor}}}{2023 -- 2024}
+            \\[5mm]
+          \resumeItemListStart
+            \resumeItem{Tutored Senior High School students at La Salle Academy in \textbf{Physics}, \textbf{Chemistry}, \textbf{Biology}, \textbf{Calculus}, and \textbf{General Math}}
+          \resumeItemListEnd
+ \vspace{-17pt}
+                   \resumeProjectHeading
+            {\textbf{{De La Salle Brother's Community, SMBA Volunteer Teacher}}}{2023 -- 2024}
+            \\[5mm]
+          \resumeItemListStart
+            \resumeItem{Delivered Christian Living lessons to underprivileged elementary students as part of community outreach}
+          \resumeItemListEnd
+          \resumeSubHeadingListEnd
+ \vspace{-12pt}
+  %-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{   
+     \textbf{Languages}{: Java (Swing, AWT, Multithreading, Networking), Python, JavaScript, HTML5, CSS} \\[1mm]
+     \textbf{Developer Tools}{: Git, GitHub, Vercel, JetBrains, VS Code} \\[1mm]
+     \textbf{Libraries/Frameworks}{: Node.js, Express.js, PostgreSQL, REST APIs, EJS, Tailwind, Bootstrap} \\ [1mm]
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+ \vspace{3pt}
+\vspace{10pt}
+
+\vspace{-15pt}
+
+
+
+\end{document}
