@@ -63,10 +63,9 @@ _Supreme Student Government_ | La Salle Academy
 
 **Redhead Redemption** | _Java, Sockets, Multithreading, OOP_ | March -- May 2025
 
-- Developed a LAN-based multiplayer top-down shooter with custom server-client networking and multithreading.
-
-* Implemented enemy AI with diverse behaviors, leveling systems, and item mechanics.
-* Designed hand-drawn pixel assets and optimized gameplay performance across multiple maps.
+- Developed a LAN-based multiplayer top-down shooter with custom server-client networking and multithreading
+- Implemented enemy AI with diverse behaviors, leveling systems, and item mechanics
+- Designed hand-drawn pixel assets and optimized gameplay performance across multiple maps
 
 **CityCraft** | _Java, Swing, AWT, Audio Programming_ | February–March 2025
 
@@ -108,7 +107,7 @@ _Supreme Student Government_ | La Salle Academy
 
 ## Technical Skills
 
-**Languages:** Java, Python, JavaScript, HTML/CSS, SQL  
-**Frameworks:** React, Node.js, Express.js, Tailwind, Bootstrap, EJS, Vite  
-**Developer Tools:** Git, GitHub, Vercel, JetBrains, VS Code  
-**Libraries:** PostgreSQL, REST APIs
+**Languages:** Java, Python, JavaScript, TypeScript, HTML/CSS, SQL  
+**Frameworks:** React, Next.js, Node.js, Express.js, Django, Vite, TailwindCSS, Bootstrap  
+**Libraries:** Zustand, Drizzle ORM, Better Auth, REST APIs, Google Studio API, EJS  
+**Developer Tools:** Git, GitHub, Vercel, JetBrains, VS Code, WSL, PostgreSQL, Neon

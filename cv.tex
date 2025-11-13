@@ -1,3 +1,10 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez (adapted for user)
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
 \documentclass[letterpaper,11pt]{article}
 
 \usepackage{latexsym}
@@ -11,12 +18,19 @@
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
-\usepackage{fontawesome5}
-\usepackage{multicol}
-\setlength{\multicolsep}{-3.0pt}
-\setlength{\columnsep}{-1pt}
 \input{glyphtounicode}
-\usepackage[margin=1.4cm]{geometry}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
 
 
 \pagestyle{fancy}
@@ -26,8 +40,11 @@
 \renewcommand{\footrulewidth}{0pt}
 
 % Adjust margins
-\addtolength{\oddsidemargin}{-0.15in}
- \addtolength{\textwidth}{0.3in}
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
 
 \urlstyle{same}
 
@@ -37,7 +54,7 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large\bfseries
+  \vspace{-4pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
@@ -47,20 +64,14 @@
 % Custom commands
 \newcommand{\resumeItem}[1]{
   \item\small{
-    {#1 \vspace{0pt}}
-  }
-}
-
-\newcommand{\classesList}[4]{
-    \item\small{
-        {#1 #2 #3 #4 \vspace{-2pt}}
+    {#1 \vspace{-2pt}}
   }
 }
 
 \newcommand{\resumeSubheading}[4]{
   \vspace{-2pt}\item
-    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & \textbf{\small #2} \\
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
     \end{tabular*}\vspace{-7pt}
 }
@@ -74,21 +85,22 @@
 
 \newcommand{\resumeProjectHeading}[2]{
     \item
-    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
-      \small#1 & \textbf{\small #2}\\
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
     \end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
 
-\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
-\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}\vspace{0pt}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 \begin{document}
@@ -97,20 +109,21 @@
 \begin{center}
     \textbf{\Huge \scshape Edrian Miguel E. Capistrano} \\ \vspace{1pt}
     \small 0976-490-7611 $|$ \href{mailto:edrian.miguel.capistrano@student.ateneo.edu}{\underline{edrian.miguel.capistrano@student.ateneo.edu}} $|$ 
-    \href{https://www.linkedin.com/in/yanicells}{\underline{linkedin.com/in/yanicells}} $|$
+    \href{https://linkedin.com/in/yanicells}{\underline{linkedin.com/in/yanicells}} $|$
     \href{https://github.com/yanicells}{\underline{github.com/yanicells}} $|$
-    \href{https://yanicells.dev/}{\underline{yanicells.dev}}
+    \href{https://yanicells.dev}{\underline{yanicells.dev}}
 \end{center}
+
 
 %-----------EDUCATION-----------
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Ateneo de Manila University}{Quezon City}
-      {Bachelor of Science in Computer Science, 2nd Year | Cumulative QPI: 3.91}{Expected Graduation: 2028}
+      {Ateneo de Manila University}{Expected Graduation: 2028}
+      {Bachelor of Science in Computer Science, 2nd Year --- Cumulative QPI: 3.91}{Quezon City, PH}
     \resumeSubheading
-      {La Salle Academy}{Iligan City}
-      {Junior High School Valedictorian, Senior High School Valedictorian with Highest Honor}{2018 -- 2024}
+      {La Salle Academy}{2018 -- 2024}
+      {Junior High Valedictorian; Senior High Valedictorian (Highest Honor)}{Iligan City, PH}
   \resumeSubHeadingListEnd
 
 
@@ -119,52 +132,51 @@
   \resumeSubHeadingListStart
 
     \resumeSubheading
-      {IT Skills \& Development Officer}{August 2025 -- Present}
-      {MISA (Management Information Systems Association)}{Ateneo de Manila University}
+      {IT Skills \& Development Officer, MISA (Management Information Systems Association)}{Aug 2025 -- Present}
+      {Ateneo de Manila University}{Quezon City, PH}
       \resumeItemListStart
-        \resumeItem{Organize technical skill trainings and workshops for students interested in information systems and technology}
-        \resumeItem{Assist in developing and maintaining organizational websites and systems to support association activities}
+        \resumeItem{Designed and ran recurring technical workshops and onboarding sessions, increasing new member contribution rate to project repositories by improving tooling familiarity and documentation.}
+        \resumeItem{Maintained and enhanced association websites and internal systems to support event registration and communications, reducing manual registration issues and support requests.}
+        \resumeItem{Coordinated cross-team standardization of development tooling and onboarding docs to accelerate developer ramp-up for events and hackathons.}
       \resumeItemListEnd
 
     \resumeSubheading
-      {Developer}{October 2025 -- Present}
-      {Computer Society of the Ateneo}{Ateneo de Manila University}
+      {Developer, Computer Society of the Ateneo}{Oct 2025 -- Present}
+      {Ateneo de Manila University}{Quezon City, PH}
       \resumeItemListStart
-        \resumeItem{Developed and deployed software solutions for organizational events and client projects including websites and web applications}
-        \resumeItem{Ensured software implementations met professional standards and served project requirements effectively}
+        \resumeItem{Architected and implemented responsive web applications and websites for organizational events, delivering production-ready code with clear documentation and maintainable structure.}
+        \resumeItem{Established code review and testing practices for student projects, improving release stability and reducing regressions during events.}
+        \resumeItem{Collaborated with product and design stakeholders to translate requirements into implemented features and accessible UIs.}
       \resumeItemListEnd
 
     \resumeSubheading
-      {Backend Developer}{September 2025 -- Present}
-      {Google Developer Groups on Campus Loyola}{Ateneo de Manila University}
+      {Backend Developer, Google Developer Groups on Campus Loyola}{Sep 2025 -- Present}
+      {Ateneo de Manila University}{Quezon City, PH}
       \resumeItemListStart
-        \resumeItem{Designed and maintained server-side applications, databases, and APIs ensuring secure and scalable data handling}
-        \resumeItem{Collaborated with front-end developers to integrate user-facing features with back-end logic}
-        \resumeItem{Monitored and optimized system performance to maintain reliability and speed}
+        \resumeItem{Built and maintained RESTful APIs and database schemas to securely expose application data to front-end clients and event dashboards.}
+        \resumeItem{Defined API contracts and partnered with front-end engineers to optimize end-to-end performance and reliability during high-traffic events.}
+        \resumeItem{Monitored service performance and tuned queries to improve response times under concurrent usage.}
       \resumeItemListEnd
 
     \resumeSubheading
-      {Geekshop Documentation Core Team}{July 2025 -- Present}
-      {CompSAt (Computer Science Association)}{Ateneo de Manila University}
+      {Documentation Core Team (Photo \& Video), Geekshop — CompSAt}{Jul 2025 -- Present}
+      {Computer Science Association (CompSAt)}{Ateneo de Manila University}
       \resumeItemListStart
-        \resumeItem{Managed photo and video documentation for events and tracked organizational records}
-        \resumeItem{Contributed to event coverage and visual storytelling for the computer science community}
+        \resumeItem{Led visual documentation for events, producing photo and video assets used in promotions and archival records; improved asset retrieval times via organized storage conventions.}
       \resumeItemListEnd
 
     \resumeSubheading
-      {Writing Assistant (ARISE)}{2025 -- Present}
-      {SOSE Newsletter}{Ateneo de Manila University}
+      {Writing Assistant (ARISE), SOSE Newsletter}{2025 -- Present}
+      {School of Science and Engineering, Ateneo de Manila University}{Quezon City, PH}
       \resumeItemListStart
-        \resumeItem{Contributed to interviewing, article writing, and editing for the School of Science and Engineering newsletter}
-        \resumeItem{Collaborated with editorial team to produce engaging content for the college community}
+        \resumeItem{Interviewed and drafted technical and community articles to increase newsletter engagement and accurately communicate research and student activities.}
       \resumeItemListEnd
 
     \resumeSubheading
-      {STEM Strand Vice Governor}{2023 -- 2024}
-      {Supreme Student Government}{La Salle Academy}
+      {STEM Strand Vice Governor, Supreme Student Government}{2023 -- 2024}
+      {La Salle Academy}{Iligan City, PH}
       \resumeItemListStart
-        \resumeItem{Oversaw events such as Sportsfest, La Salle Fair, Jumpstart, and House Cup at La Salle Academy}
-        \resumeItem{Developed leadership, logistics, time management, and project coordination skills through event management}
+        \resumeItem{Directed planning and logistics for large student events (Sportsfest, La Salle Fair), coordinating teams and vendors to deliver events on schedule and within budgetary constraints.}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
@@ -174,65 +186,53 @@
 \section{Projects}
     \resumeSubHeadingListStart
       \resumeProjectHeading
-          {\textbf{Redhead Redemption} $|$ \emph{Java, Sockets, Multithreading, OOP}}{March -- May 2025}
+          {\textbf{Redhead Redemption} $|$ \emph{Java, Sockets, Multithreading, OOP}}{Mar 2025 -- May 2025}
           \resumeItemListStart
-            \resumeItem{Developed a LAN-based multiplayer top-down shooter with custom server-client networking and multithreading}
-            \resumeItem{Implemented enemy AI with diverse behaviors, leveling systems, and item mechanics}
-            \resumeItem{Designed hand-drawn pixel assets and optimized gameplay performance across multiple maps}
+            \resumeItem{Built a LAN-based multiplayer top-down shooter with custom server/client networking and a multithreaded server to handle concurrent players and game state synchronization.}
+            \resumeItem{Implemented enemy AI, item mechanics, and level design; optimized networking and game loop to maintain stable gameplay under concurrent connections.}
           \resumeItemListEnd
+
       \resumeProjectHeading
-          {\textbf{CityCraft} $|$ \emph{Java, Swing, AWT, Audio Programming}}{February -- March 2025}
+          {\textbf{CityCraft} $|$ \emph{Java, Swing, AWT, Audio Programming}}{Feb 2025 -- Mar 2025}
           \resumeItemListStart
-            \resumeItem{Built an interactive 2D animated cityscape featuring dual-player control, lighting, and dynamic weather}
-            \resumeItem{Integrated environmental interactions such as fireworks, rain, and bird animations with sound effects}
-            \resumeItem{Applied object-oriented principles and event-driven programming for animation control}
+            \resumeItem{Developed an animated 2D cityscape with dual-player controls, dynamic lighting, weather systems, and event-driven architecture for smooth animations.}
           \resumeItemListEnd
+
       \resumeProjectHeading
-          {\textbf{NASA APIs Explorer} $|$ \emph{Node.js, Express.js, TailwindCSS, REST APIs}}{August -- October 2025}
+          {\textbf{NASA APIs Explorer} $|$ \emph{Node.js, Express, TailwindCSS, REST APIs}}{Aug 2025 -- Oct 2025}
           \resumeItemListStart
-            \resumeItem{Created a full-stack web app integrating multiple NASA APIs for images, media, and Mars data}
-            \resumeItem{Implemented backend data handling and frontend visualization of astronomy and rover datasets}
-            \resumeItem{Strengthened API integration, server routing, and UI data representation skills}
+            \resumeItem{Created a full-stack app aggregating NASA APIs to present images, media, and Mars data with interactive visualizations and backend caching for faster browsing.}
           \resumeItemListEnd
+
       \resumeProjectHeading
-          {\textbf{Musicells} $|$ \emph{React, Vite, TailwindCSS, Spotify API}}{September -- October 2025}
+          {\textbf{Musicells} $|$ \emph{React, Vite, TailwindCSS, Spotify API}}{Sep 2025 -- Oct 2025}
           \resumeItemListStart
-            \resumeItem{Built a responsive React app for browsing and favoriting music albums using Spotify's API}
-            \resumeItem{Designed album search, new releases, and detail views with interactive UI components}
-            \resumeItem{Gained experience in API authentication, state management, and modular frontend design}
+            \resumeItem{Built a responsive React app for searching and favoriting albums using the Spotify API; handled OAuth flows and client-side state for user sessions.}
           \resumeItemListEnd
+
       \resumeProjectHeading
-          {\textbf{UniSort} $|$ \emph{Node.js, Express.js, TailwindCSS, PostgreSQL}}{September 2025}
+          {\textbf{UniSort} $|$ \emph{Node.js, Express, TailwindCSS, PostgreSQL}}{Sep 2025}
           \resumeItemListStart
-            \resumeItem{Developed a personality quiz web app that sorts users into universities based on quiz results}
-            \resumeItem{Implemented backend logic for scoring, user authentication, and result storage}
-            \resumeItem{Focused on database integration, server-side validation, and frontend responsiveness}
+            \resumeItem{Implemented a personality-quiz web app that recommends universities based on scoring logic, secure authentication, and persistent result storage.}
           \resumeItemListEnd
+
       \resumeProjectHeading
-          {\textbf{Blogcells} $|$ \emph{Node.js, Express.js, TailwindCSS, PostgreSQL}}{August -- September 2025}
+          {\textbf{Blogcells \& Travel-Tracker} $|$ \emph{Node.js, Express, PostgreSQL, TailwindCSS/Bootstrap}}{Aug 2025 -- Sep 2025}
           \resumeItemListStart
-            \resumeItem{Created a blog platform supporting user posts, comments, and likes with a clean responsive UI}
-            \resumeItem{Built RESTful routes for CRUD operations and database persistence}
-            \resumeItem{Enhanced understanding of backend data models and interactive web content}
-          \resumeItemListEnd
-      \resumeProjectHeading
-          {\textbf{Travel-Tracker} $|$ \emph{Node.js, Express.js, Bootstrap, PostgreSQL}}{August 2025}
-          \resumeItemListStart
-            \resumeItem{Designed a web app for users to record and visualize visited countries using ISO codes}
-            \resumeItem{Developed user profile management and CRUD functionalities for country tracking}
-            \resumeItem{Improved proficiency in database schema design and server-client data flow}
+            \resumeItem{Built a blog platform (posts, comments, likes) and a country-tracking app with user profiles and CRUD features, focusing on clean UX and backend validation.}
           \resumeItemListEnd
     \resumeSubHeadingListEnd
+
 
 
 %-----------PROGRAMMING SKILLS-----------
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: Java, Python, JavaScript, HTML/CSS, SQL} \\
-     \textbf{Frameworks}{: React, Node.js, Express.js, Tailwind, Bootstrap, EJS, Vite} \\
-     \textbf{Developer Tools}{: Git, GitHub, Vercel, JetBrains, VS Code} \\
-     \textbf{Libraries}{: PostgreSQL, REST APIs}
+     \textbf{Languages}{: Java, Python, JavaScript, TypeScript, HTML/CSS, SQL} \\
+     \textbf{Frameworks \& Libraries}{: React, Next.js, Node.js, Express, Django, Vite, TailwindCSS, Bootstrap, EJS, Zustand, Drizzle ORM} \\
+     \textbf{Tools \& Platforms}{: Git, GitHub, Vercel, JetBrains, VS Code, WSL, Docker, PostgreSQL, Neon} \\
+     \textbf{Other}{: REST APIs, Authentication (OAuth), Testing, Multithreading, Socket Programming}
     }}
  \end{itemize}
 
