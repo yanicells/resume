@@ -1,7 +1,7 @@
 ## Experience
 
 **IT Skills & Development Officer** | August 2025 -- Present  
-_MISA (Management Information Systems Association)_ | Ateneo de Manila University
+_MISA (Ateneo Management Information Systems Association)_ | Ateneo de Manila University
 
 - Organize technical skill trainings and workshops for students interested in information systems and technology
 - Assist in developing and maintaining organizational websites and systems to support association activities
