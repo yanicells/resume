@@ -3,7 +3,7 @@
 **Languages:** Java, Python, JavaScript, TypeScript, HTML/CSS, SQL  
 **Frameworks:** React, Next.js, Node.js, Express.js, Django, Vite, TailwindCSS, Bootstrap  
 **Libraries:** Zustand, Drizzle ORM, Better Auth, REST APIs, Google Studio API, EJS  
-**Developer Tools:** Git, GitHub, Vercel, JetBrains, VS Code, WSL, PostgreSQL, Neon  
+**Developer Tools:** Git, GitHub, Vercel, JetBrains, VS Code, WSL, PostgreSQL, Neon, Postman
 
 
 ## Awards and Certificates 
