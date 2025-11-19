@@ -49,3 +49,9 @@
 - Developed user profile management and CRUD functionalities for country tracking.
 - Improved proficiency in database schema design and server–client data flow.
 
+**Chika** | *Next.js, TypeScript, TailwindCSS, Drizzle, Neon, Better Auth* | November 2025
+
+* Built a full-stack anonymous messaging platform with public/private notes, comments, and emoji reactions inspired by NGL-style interactions.
+* Developed secure note handling, server-side actions, authentication, and file uploads using Better Auth, Neon PostgreSQL, and Uploadthing.
+* Created an admin dashboard for moderating notes, managing comments, and publishing blog posts with dynamic content.
+* Designed a responsive UI with Next.js + Tailwind, including color-themed notes and a word-cloud visualization for public messages.
